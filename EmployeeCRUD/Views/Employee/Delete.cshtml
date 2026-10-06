@@ -1,0 +1,17 @@
+@model EmployeeCRUD.Models.Employee
+
+<h2>Delete Employee</h2>
+
+<p>
+Delete @Model.Name ?
+</p>
+
+<form asp-action="Delete">
+
+<input type="hidden" asp-for="Id"/>
+
+<button type="submit">
+Delete
+</button>
+
+</form>
